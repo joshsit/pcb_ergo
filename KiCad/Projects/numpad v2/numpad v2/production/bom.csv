@@ -1,0 +1,5 @@
+﻿Designator,Footprint,Quantity,Value,LCSC Part #
+BT1,JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal,1,Battery_Cell,
+"D1, D10, D12, D13, D14, D2, D3, D4, D5, D6, D8, D9",Diode_DO-35,12,Diode,
+"S1, S10, S12, S13, S14, S2, S3, S4, S5, S6, S8, S9",Hotswap_MX_1.00u,12,Keyswitch,
+SW1,1test slide switch,1,Switch,
