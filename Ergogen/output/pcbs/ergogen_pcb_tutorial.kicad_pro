@@ -467,6 +467,10 @@
       },
       {
         "netclass": "Default",
+        "pattern": "BPos"
+      },
+      {
+        "netclass": "Default",
         "pattern": "RAW"
       },
       {
@@ -488,6 +492,10 @@
       {
         "netclass": "Default",
         "pattern": "pos"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P006"
       },
       {
         "netclass": "Default",

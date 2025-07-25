@@ -143,15 +143,15 @@ pcbs:
           from: "{{colrow}}"
           to: "{{row_net}}"
         adjust:
-          shift: [0, -0.5u]  
+          shift: [0, -0.5u+1]  
           rotate: 0
       mcu:
-        what: nice_nano
+        what: nice_nano_josh
         params:
 
           orientation: "up"
-          P006: pos
-          RAW: RAW
+          BNeg: pos
+          BPos: BPos
         where:
           ref.aggregate.parts: [matrix_inner_top, mirror_matrix_inner_top]
           shift: [0,-1.25u]
@@ -168,14 +168,14 @@ pcbs:
           pos: pos
           neg: neg
       slider:
-        what: slider
+        what: custom_slider
         where:
           ref.aggregate.parts: [matrix_inner_top, mirror_matrix_inner_top]  # Same anchor as Pro Micro
           shift: [0, -2.75u] 
           rotate: 0  
         params:
 
-          from: RAW
+          from: BPos
           to: neg
       
 
