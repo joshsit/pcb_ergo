@@ -9,71 +9,71 @@ points:
       columns:
         pinky:
           key:
-            column_net: P21
-            mirror.column_net: P2
+            column_net: P017
+            mirror.column_net: P031
         ring:
           key:
             stagger: u/2
-            column_net: P20
-            mirror.column_net: P3
+            column_net: P020
+            mirror.column_net: P029
         middle:
           key:
             stagger: u/2
-            column_net: P19
-            mirror.column_net: P4
+            column_net: P022
+            mirror.column_net: P002
         index:
           key:
             stagger: -u/2
-            column_net: P18
-            mirror.column_net: P5
+            column_net: P024
+            mirror.column_net: P115
         inner:
           key:
-            column_net: P15
-            mirror.column_net: P6
+            column_net: P100
+            mirror.column_net: P113
       rows:
         bottom:
-          row_net: P8
-          mirror.row_net: P8
+          row_net: P104
+          mirror.row_net: P104
         home:
-          row_net: P16
-          mirror.row_net: P16
+          row_net: P010
+          mirror.row_net: P010
         top:
-          row_net: P14
-          mirror.row_net: P14
+          row_net: P111
+          mirror.row_net: P111
     thumb:
       anchor:
         ref: matrix_inner_bottom
         shift: [-u,-u]
       rows:
         cluster:
-          row_net: P9
+          row_net: P106
       columns:
           inner:
             key:
-              column_net: P19
-              mirror.column_net: P4
+              column_net: P022
+              mirror.column_net: P002
           middle:
             key:
-              column_net: P18
-              mirror.column_net: P5
+              column_net: P024
+              mirror.column_net: P115
           outer:
             key:
-              column_net: P15
-              mirror.column_net: P6
+              column_net: P100
+              mirror.column_net: P113
   rotate: -17.5
   mirror:
     ref: thumb_outer_cluster
     distance: 2u
 
 outlines:
-  raw_outline:
+  raw_outline: ##with 3mm margin
     - what: rectangle
       where: true
-      size: [u,u]
+      size: [u+4,u+4]
   keys_ref:
     - what: rectangle
       where: true
-      size: [u-0.25,u-0.25]
+      size: [u,u]
   centre:
     - what: polygon
       operation: stack
@@ -83,9 +83,9 @@ outlines:
         - ref: matrix_inner_top
           shift: [dx, dx-4u]
         - ref: matrix_inner_top
-          shift: [dx, dx]
+          shift: [dx+2, dx+2]
         - ref: mirror_matrix_inner_top
-          shift: [dx, dx]
+          shift: [dx+2, dx+2]
   centre2:
     - what: polygon
       operation: stack
@@ -93,9 +93,9 @@ outlines:
         - ref: thumb_outer_cluster
           shift: [0.5u, 0.5u]
         - ref: thumb_outer_cluster
-          shift: [0.5u, -0.5u]
+          shift: [0.5u+2, -0.5u-2]
         - ref: mirror_thumb_outer_cluster
-          shift: [0.5u, -0.5u]
+          shift: [0.5u+2, -0.5u-2]
         - ref: mirror_thumb_outer_cluster
           shift: [0.5u, 0.5u]
      
@@ -142,14 +142,46 @@ pcbs:
           from: "{{colrow}}"
           to: "{{row_net}}"
         adjust:
-          shift: [0, -5]
-      promicro:
-        what: promicro
+          shift: [0, -0.5u]  
+          rotate: 0
+      mcu:
+        what: nice_nano
         params:
-          orientation: "down"
+
+          orientation: "up"
+          P006: pos
+          RAW: RAW
         where:
           ref.aggregate.parts: [matrix_inner_top, mirror_matrix_inner_top]
-          shift: [0,-u]
-          rotate: -90                      
+          shift: [0,-1.25u]
+          rotate: -90
+          
+      jst connector:
+        what: jstph
+        where:
+          ref.aggregate.parts: [matrix_inner_top, mirror_matrix_inner_top]  # Same anchor as Pro Micro
+          shift: [0, -2.25u] 
+          rotate: 0  
+        params:
+
+          pos: pos
+          neg: neg
+      slider:
+        what: slider
+        where:
+          ref.aggregate.parts: [matrix_inner_top, mirror_matrix_inner_top]  # Same anchor as Pro Micro
+          shift: [0, -2.75u] 
+          rotate: 0  
+        params:
+
+          from: RAW
+          to: neg
+      
+
+## to build in terminal:
+## cd Desktop\Github\pcb_ergo\Ergogen
+## ergogen .
+
+                                 
        
 
