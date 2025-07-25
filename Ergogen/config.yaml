@@ -108,6 +108,7 @@ outlines:
     - name: joined_outline
     - operation: add
       name: centre2
+      fillet: 2.5
 
 
   visual1:

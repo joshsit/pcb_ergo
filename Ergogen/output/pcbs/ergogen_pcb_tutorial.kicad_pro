@@ -267,7 +267,7 @@
       },
       {
         "netclass": "Default",
-        "pattern": "P21"
+        "pattern": "P017"
       },
       {
         "netclass": "Default",
@@ -283,7 +283,7 @@
       },
       {
         "netclass": "Default",
-        "pattern": "P20"
+        "pattern": "P020"
       },
       {
         "netclass": "Default",
@@ -299,7 +299,7 @@
       },
       {
         "netclass": "Default",
-        "pattern": "P19"
+        "pattern": "P022"
       },
       {
         "netclass": "Default",
@@ -315,7 +315,7 @@
       },
       {
         "netclass": "Default",
-        "pattern": "P18"
+        "pattern": "P024"
       },
       {
         "netclass": "Default",
@@ -331,7 +331,7 @@
       },
       {
         "netclass": "Default",
-        "pattern": "P15"
+        "pattern": "P100"
       },
       {
         "netclass": "Default",
@@ -359,7 +359,7 @@
       },
       {
         "netclass": "Default",
-        "pattern": "P2"
+        "pattern": "P031"
       },
       {
         "netclass": "Default",
@@ -375,7 +375,7 @@
       },
       {
         "netclass": "Default",
-        "pattern": "P3"
+        "pattern": "P029"
       },
       {
         "netclass": "Default",
@@ -391,7 +391,7 @@
       },
       {
         "netclass": "Default",
-        "pattern": "P4"
+        "pattern": "P002"
       },
       {
         "netclass": "Default",
@@ -407,7 +407,7 @@
       },
       {
         "netclass": "Default",
-        "pattern": "P5"
+        "pattern": "P115"
       },
       {
         "netclass": "Default",
@@ -423,7 +423,7 @@
       },
       {
         "netclass": "Default",
-        "pattern": "P6"
+        "pattern": "P113"
       },
       {
         "netclass": "Default",
@@ -451,19 +451,19 @@
       },
       {
         "netclass": "Default",
-        "pattern": "P8"
+        "pattern": "P104"
       },
       {
         "netclass": "Default",
-        "pattern": "P16"
+        "pattern": "P010"
       },
       {
         "netclass": "Default",
-        "pattern": "P14"
+        "pattern": "P111"
       },
       {
         "netclass": "Default",
-        "pattern": "P9"
+        "pattern": "P106"
       },
       {
         "netclass": "Default",
@@ -483,34 +483,6 @@
       },
       {
         "netclass": "Default",
-        "pattern": "P031"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "P029"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "P002"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "P115"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "P113"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "P111"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "P010"
-      },
-      {
-        "netclass": "Default",
         "pattern": "P009"
       },
       {
@@ -523,35 +495,7 @@
       },
       {
         "netclass": "Default",
-        "pattern": "P017"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "P020"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "P022"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "P024"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "P100"
-      },
-      {
-        "netclass": "Default",
         "pattern": "P011"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "P104"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "P106"
       },
       {
         "netclass": "Default",
@@ -578,7 +522,7 @@
       "netlist": "",
       "plot": "",
       "pos_files": "",
-      "specctra_dsn": "",
+      "specctra_dsn": "ergogen_pcb_tutorial.dsn",
       "step": "",
       "svg": "",
       "vrml": ""
